@@ -14,5 +14,7 @@ let N = 10,
   a = Array(N);
 
 while (i < N) a[i++] = i;
+document.write(a);
+document.write('<br>');
 a.reverse();
-console.log(a);
+document.write(a);
