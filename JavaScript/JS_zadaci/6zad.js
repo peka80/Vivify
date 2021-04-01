@@ -1,47 +1,15 @@
 document.write(
-  '<b>Napraviti promenljive a i b, koje sadrže proizvoljne brojeve, i promenljivu <u><i>operacija</i></u> koja sadrzi string sa nazivom operacije. (moze da bude ‘saberi’, ‘oduzmi’, ‘pomnozi’, ‘podeli’). Ispisati rezultat operacije čiji naziv je sadržan u promenljivoj operacija sa vrednostima a i b. Npr. ako je vrednost promenljive operacija ‘saberi’, ispisati rezultat a + b (koristiti switch).</b><br><br>'
+  '<b>Napraviti dva niza, m i n, sa proizvoljnim brojem elemenata. Ako je broj elemenata u nizu m veći od broja elemeneta u nizu n  ispisati sve elemente niza m. U suprotnom, ispisati elemente niza n.</b><br><br>'
 );
 
-let a = 5;
-let b = 10;
-let operacija = 'Podeli';
+let m = [1, 2, 3, 4, 5];
+let n = new Array(10, 11, 12, 13, 'Petar', 'Milica');
 
-switch (operacija) {
-  case 'Saberi':
-    document.write(
-      'Zbir promenljive A (' + a + ') i promenljive B (' + b + ') je ' + (a + b)
-    );
-    break;
-  case 'Oduzmi':
-    document.write(
-      'Razlika promenljive A (' +
-        a +
-        ') i promenljive B (' +
-        b +
-        ') je ' +
-        (a - b)
-    );
-    break;
-  case 'Pomnozi':
-    document.write(
-      'Proizvod promenljive A (' +
-        a +
-        ') i promenljive B (' +
-        b +
-        ') je ' +
-        a * b
-    );
-    break;
-  case 'Podeli':
-    document.write(
-      'Količnik promenljive A (' +
-        a +
-        ') i promenljive B (' +
-        b +
-        ') je ' +
-        a / b
-    );
-    break;
-  default:
-    document.write('Nepoznata operacija!');
+console.log(m);
+console.log(n);
+
+if (m.length > n.length) {
+  document.write(m);
+} else {
+  document.write(n);
 }
