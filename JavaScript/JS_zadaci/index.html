@@ -6,6 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JS Zadaci</title>
     <style>
+      /* Chrome, Safari, Edge, Opera - UKLONITI STRELICE ZA NUMBER BOX COUNTER*/
+      input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+      /* Firefox UKLONITI STRELICE ZA NUMBER BOX COUNTER*/
+      input[type='number'] {
+        -moz-appearance: textfield;
+      }
+
       body {
         font-size: 1.3rem;
       }
@@ -14,6 +25,23 @@
   <body>
     <h2>Zadaci JavaScript</h2>
     <hr />
-    <script src="13zad.js"></script>
+    <script src="15zad.js"></script>
+    <!-- <p>
+      Upisi starost u godinama:
+      <input
+        style="width: 38px; font-size: 14px"
+        type="number"
+        id="age"
+        value=""
+        onkeyup="inputKeyUp(event)"
+      />
+    </p>
+    <button id="btn" type="submit" onclick="anonymousDogAge">
+      Konvertuj u psece godine
+    </button>
+    <p>
+      Starost u psećim godina je:
+      <span id="rez"></span>
+    </p> -->
   </body>
 </html>
